@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-image: url("elect.jpg");
+            background-size: auto;
+            opacity: 0.9;}
+
+
+
+        input[type=text] {
+            width: 100%;
+            padding: 12px 25px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid darkblue;
+            border-radius: 4px;
+            background-color: #3CBC8D;
+            color: white;
+        }
+        input[type=password] {
+            width: 100%;
+            padding: 12px 25px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid darkblue;
+            border-radius: 4px;
+            background-color: #3CBC8D;
+            color: white;
+        }
+        .button {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.8);
+            background: rgb(92, 104, 182);
+            padding: 15px 40px;
+            border-radius: 4px;
+            font-weight: normal;
+            text-transform: uppercase;
+            transition: all 0.2s ease-in-out;
+
+        }
+        .glow-button:hover {
+            color: rgba(255, 255, 255, 1);
+            box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+        }
+
+        #cred th {
+
+            text-align: left;
+
+        }
+
+        #footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            /* Height of the footer*/
+            height: 40px;
+            background: grey;
+        }
+        #glow {
+            font-size: 80px;
+            color: #fff;
+            text-align: center;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0026e6, 0 0 40px #6700e6, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+            }
+
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #4de4ff, 0 0 40px #4dd0ff, 0 0 50px #4d7fff, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+            }
+        }
+    </style>
+    <title>Welcome to the Election Result Management System</title>
+    <meta charset="UTF-8">
+    <meta name="'viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<center>
+    <h1>WELCOME TO THE ELECTION RESULT MANAGEMENT SYSTEM</h1>
+    <h1></h1>
+    <h2>PLEASE INSERT YOUR CREDENTIALS</h2>
+    <form action="home.html" method="post">
+
+
+        <table id="cred">
+            <tr>
+                <th>USERNAME</th>
+                <th></th>
+                <th><input type="text" name="username"/></th>
+            </tr>
+            <tr>
+                <th>PASSWORD</th>
+                <th></th>
+                <th><input type="password" name="password"/></th>
+            </tr>
+            <tr>
+                <th></th>
+
+                <th> <button class="button glow-button" target="_blank" input type="submit" />LOGIN</button></th>
+
+            </tr>
+        </table>
+
+    </form>
+</center>
+<div id="footer">
+
+    <h2>Designed By Group MSD for Group Project</h2>
+</div>>
+</body>
+</html>
