@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         <servlet>
+         <servlet-name>login</servlet-name>
+         <servlet-class>com.officials.PublishServelet</servlet-class>
+         </servlet>
+        
+        <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/publish</url-pattern>
+        </servlet-mapping>
+        
+        <servlet>
+         <servlet-name>valiedResults</servlet-name>
+         <servlet-class>com.ValiedResults.VRServelet</servlet-class>
+         </servlet>
+        
+        <servlet-mapping>
+        <servlet-name>valiedResults</servlet-name>
+        <url-pattern>/valiedResults</url-pattern>
+        </servlet-mapping>
+        
+        <servlet>
+         <servlet-name>Inbox</servlet-name>
+         <servlet-class>com.Inbox.InServelet</servlet-class>
+         </servlet>
+        
+        <servlet-mapping>
+        <servlet-name>Inbox</servlet-name>
+        <url-pattern>/inbox</url-pattern>
+        </servlet-mapping>
+        
+        <servlet>
+         <servlet-name>View</servlet-name>
+         <servlet-class>com.Inbox.ViewServelet</servlet-class>
+         </servlet>
+        
+        <servlet-mapping>
+        <servlet-name>View</servlet-name>
+        <url-pattern>/view</url-pattern>
+        </servlet-mapping>
+</web-app>
